@@ -216,3 +216,7 @@ h1 { text-transform: none; white-space: nowrap; font-size: clamp(44px, 12vw, 88p
 .install li::before { content: counter(i); font-size: 28px; font-weight: 800; line-height: 1; color: var(--ink); }
 .install b { color: var(--ink); }
 .muted-inline { color: var(--muted); font-size: 15px; }
+
+/* fix: install steps – text flows normally, number pinned on the left */
+.install li { display: block; position: relative; padding: 18px 0 18px 44px; }
+.install li::before { position: absolute; left: 0; top: 16px; }
