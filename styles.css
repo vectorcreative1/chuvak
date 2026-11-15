@@ -205,3 +205,14 @@ h1 { text-transform: none; white-space: nowrap; font-size: clamp(44px, 12vw, 88p
 .js .paid:not(.open) { display: none; }
 .paid-q { font-size: 22px; font-weight: 800; margin: 0 0 14px; }
 .paid-btn { border: 0; cursor: pointer; background: var(--ink); color: #000; }
+
+/* Install: single method (projects) */
+.install { list-style: none; padding: 0; margin: 28px 0 8px; counter-reset: i; }
+.install li {
+  counter-increment: i;
+  display: grid; grid-template-columns: 44px 1fr; gap: 8px;
+  padding: 18px 0; border-top: 1px solid var(--line); color: #cfcfcf;
+}
+.install li::before { content: counter(i); font-size: 28px; font-weight: 800; line-height: 1; color: var(--ink); }
+.install b { color: var(--ink); }
+.muted-inline { color: var(--muted); font-size: 15px; }
