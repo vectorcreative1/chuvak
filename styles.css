@@ -220,3 +220,7 @@ h1 { text-transform: none; white-space: nowrap; font-size: clamp(44px, 12vw, 88p
 /* fix: install steps – text flows normally, number pinned on the left */
 .install li { display: block; position: relative; padding: 18px 0 18px 44px; }
 .install li::before { position: absolute; left: 0; top: 16px; }
+
+/* Thank-you page: actions inside install steps */
+.step-action { margin-top: 14px; }
+.step-action .short-text { margin: 0 0 12px; }
